@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rocnikovy projekt</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/3cafc4ed14.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <section class="headerBP">
+        <nav>
+            <a><img src="eduford_img/Snímka_obrazovky_2024-02-18_o_16.01.30-removebg-preview - kópia.png"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="bezpecnostny_projekt.html">BEZPEČNOSTNÝ PROJEKT</a></li>
+                    <li><a href="zalohovanie.html">ZÁLOHOVANIE DÁT</a></li>
+                    <li><a href="napadnutia.html">OCHRANA DÁT</a></li>
+                    <li><a href="kontakt.html">ZDROJE</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+
+
+    <div class="text-box">
+        <p style="font-size: 50px; padding-bottom: 25%; font-weight: 600;">Ochrana dát</p>
+        
+    </div>
+
+    <div class="text-zal">
+        <p>V dnešnej digitálnej dobe sa informácie stali jedným z najcennejších zdrojov. S narastajúcim množstvom citlivých údajov uložených online a na osobných zariadeniach prichádza aj zvýšené riziko ich napadnutia. Napadnutie dát predstavuje závažnú hrozbu, ktorá môže mať devastujúce následky pre jednotlivcov, podniky a organizácie.</p>
+        <p>Napadnutie dát môže mať mnoho foriem, od neoprávneného prístupu a krádeže citlivých informácií až po poškodenie alebo zničenie dát. Pred mnohými z rizík sa dá efektívne brániť a pripraviť sa na ne.</p>
+    </div>
+
+    <section class="nap" id="nap">
+        <div class="tab">
+            <button class="tablinks active" onclick="openCity(event, 'London')">Ochrana pred napadnutím počítača</button>
+            <button class="tablinks" onclick="openCity(event, 'Paris')">Ochrana voči nehodám</button>
+            <button class="tablinks" onclick="openCity(event, 'Tokyo')">Ochrana voči technickým poruchám</button>
+        </div>
+        
+        <div id="London" class="tabcontent" style="display: block;">
+            <h3>Ochrana pred napadnutím počítača</h3>
+            <ul>
+                <li>nastavnie BIOS hesla</li>
+                <li>silné heslo do operačného systému alebo overenie pomocou biometrie alebo čipu</li>
+                <li>politika hesiel vo firmách - dĺžka a rôzne znaky v hesle</li>
+                <li>uzamknutie obrazovky šetričom</li>
+                <li>šifrovanie údajov na disku</li>
+                <li>firewall, antivírusové programy a šifrovaný prenos dát</li>
+                <li>dodržiavanie bezpečnostných protokolov </li>
+            </ul>
+        </div>
+        
+        <div id="Paris" class="tabcontent" style="display: none;">
+            <h3>Ochrana voči nehodám</h3>
+                <ul>
+                    <li>obmedzenie práv používateľov</li>
+                    <li>používanie systémov s možnosťou vratných transakcií</li>
+                    <li>zálohovanie kľúčových súborov a systémov</li>
+                    <li>aktualizácia operačného systému</li>
+                    <li>nenavštevovať potenciálne nebezpečné stránky</li>
+                    <li>dať si pozor čo sťahujem a otváram na počítači</li>
+                    <li>protipožiarna ochrana</li>
+                    <li>bleskopoistky</li>
+                </ul>
+        </div>
+        
+        <div id="Tokyo" class="tabcontent" style="display: none;">
+            <h3>Ochrana voči technickým poruchám</h3>
+                <ul>
+                    <li>zrkadlenie a klastrovnia systémov</li>
+                    <li>záložne droje a generátory elektrickej enegrie</li>
+                    <li>používanie prepäťovej ochrany</li>
+                    <li>chladiace systémy</li>
+                    <li>zdroje záložného napájania - UPS</li>
+                    <li>odolnosť proti byzantským poruchám</li>
+
+                </ul>
+        </div>
+
+    </section>
+
+
+    </section>
+
+
+    
+
+
+    <section class="footer">
+        <h4>O mne</h4>
+        <p>Volám sa Adela Bežová, som študentka GĽŠTN a túto stránku som vytvorila v rámci ročníkového projektu z informatiky.</p>
+        <p>máj 2024</p>
+        <div class="icon">
+            <a href="https://www.facebook.com/adel.bezova/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://twitter.com/adelle42862389" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/adela_bezova/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/adela-bezova-085b4b286/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/adelbezova/" target="_blank"><i class="fa-brands fa-github"></i></a>
+
+        </div>
+
+    </section>
+
+    <!-- ------JavaScript for menu----- -->
+    <script>
+        var navlinks = document.getElementById("navlinks");
+        function showMenu() {
+            navlinks.style.right = "0";
+        }
+        function hideMenu() {
+            navlinks.style.right = "-300px";
+        }
+
+        
+
+        function openCity(evt, cityName) {
+            // Declare all variables
+            var i, tabcontent, tablinks;
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Show the current tab, and add an "active" class to the link that opened the tab
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Initial call to display the first tab content
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelector(".tablinks.active").click();
+        });
+    </script>
+</body>
+</html>
